@@ -22,6 +22,7 @@ $result_query = $mysqli->query($query);
         <thead>
             <tr>
                 <th>Nome</th>
+                <th>cpf</th>
                 <th>Endereço</th>
                 <th>Ações</th>
             </tr>
@@ -31,6 +32,7 @@ $result_query = $mysqli->query($query);
             while ($row = mysqli_fetch_array( $result_query )) { 
                 print "<tr>";
                 print "<td>" . $row['nome'] . "</td>";
+                print "<td>" . $row['cpf'] . "</td>";
                 print "<td>" . $row['endereco'] . "</td>";
                 print "<td>";
                 print "<a href='alterar.php?id=".$row['id']."' >alterar</a> - ";

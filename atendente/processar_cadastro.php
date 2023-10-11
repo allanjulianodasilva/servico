@@ -3,12 +3,11 @@
 include('../database.php');
 
 $nome= $_POST['nome'];
+$cpf= $_POST['cpf'];
 $endereço= $_POST['endereco'];
-echo $nome."<br>";
-echo $endereço."<br>";
 
-$query = "INSERT INTO livraria.editora (nome,endereco) VALUES ('$nome','$endereço')" ;
+$query = "INSERT INTO servico.atendente (nome,cpf,endereco) VALUES ('$nome','$cpf','$endereço')" ;
 $result_query = $mysqli->query($query);
 
-header("Location: listar.php");
+header("Location: index.php");
 ?>
