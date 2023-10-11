@@ -22,10 +22,12 @@ $result_query = $mysqli->query($query);
         <thead>
             <tr>
                 <th> numero_identificacao </th>
-                <th>cpf</th>
-                <th>descricao </th>
-                <th>valor </th>
-                <th>solicitacao_servico </th>
+                <th>data_solicitacao</th>
+                <th>data_inicio </th>
+                <th>data_termino </th>
+                <th>tecnico </th>
+                <th>cliente </th>
+                <th>atentente </th>
             </tr>
         </thead>
         <tbody>

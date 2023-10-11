@@ -43,7 +43,7 @@ $result_query = $mysqli->query($query);
                 print "<td>" . $row[' tecnico '] . "</td>";
                 print "<td>" . $row['atentente'] . "</td>";
                 print "<td>";
-                print "<a href='alterar.php?id=".$row['id']."' >alterar</a> - ";
+                print "<a href='alterar.php?id=".$row['id']."' >alterar</a> ";
                 print "<a href='excluir.php?id=".$row['id']."' >excluir</a>";
                 print "</td>";
                 print "</tr>";
