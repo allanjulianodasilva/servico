@@ -1,0 +1,23 @@
+<!-- alteracao.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alteração de Livros</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF8"
+</head>
+<body>
+    <h1>Alteração de Livros</h1>
+    <form action="processar_alteracao.php" method="POST">
+        <!-- Exibir os dados do livro a ser alterado -->
+        Título: <input type="text" name="titulo" required><br>
+        Autor: <input type="text" name="autor"><br>
+        Ano de Publicação: <input type="number" name="ano_publicacao"><br>
+        Editora: <input type="text" name="Editora"><br>
+        ano de ediçao: <input type="number" name="ano_ediçao"><br>
+        <select name="editora_id">
+            <!-- Preencha com opções do banco de dados -->
+        </select><br>
+        <input type="submit" value="Salvar Alterações">
+    </form>
+</body>
+</html>
