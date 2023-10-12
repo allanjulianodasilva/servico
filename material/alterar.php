@@ -12,7 +12,7 @@ $row = $result_query->num_rows;
 $material = $result_query->fetch_assoc();
 
 if ($row > 0){
-    $numero_indentificao = $material['numero_indentificao'];
+    $numero_indentificacao = $material['numero_indentificao'];
     $descricao = $material['descricao'];
     $valor = $material['valor'];
    ;

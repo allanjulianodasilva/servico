@@ -33,7 +33,7 @@ $result_query = $mysqli->query($query);
             while ($row = mysqli_fetch_array( $result_query )) { 
                 print "<tr>";
                 print "<td>" . $row['nome'] . "</td>";
-                print "<td>" . $row['nome'] . "</td>";
+                print "<td>" . $row['cpf'] . "</td>";
                 print "<td>" . $row['endereco'] . "</td>";
                 print "<td>" . $row['telefone'] . "</td>";
                 print "<td>";
