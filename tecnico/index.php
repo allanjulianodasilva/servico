@@ -2,7 +2,7 @@
 include('../database.php');
 
 # Executa a query desejada 
-$query = "SELECT * FROM servico.atendente"; 
+$query = "SELECT * FROM servico.tecnico"; 
 $result_query = $mysqli->query($query);
 
 

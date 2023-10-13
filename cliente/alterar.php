@@ -9,7 +9,7 @@ $result_query = $mysqli->query($query);
 
 
 $row = $result_query->num_rows;
-$atendente = $result_query->fetch_assoc();
+$cliente = $result_query->fetch_assoc();
 
 if ($row > 0){
     $nome = $cliente['nome'];

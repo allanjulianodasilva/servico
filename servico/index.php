@@ -2,7 +2,7 @@
 include('../database.php');
 
 # Executa a query desejada 
-$query = "SELECT * FROM servico.atendente"; 
+$query = "SELECT * FROM servico.servico"; 
 $result_query = $mysqli->query($query);
 
 
@@ -21,10 +21,10 @@ $result_query = $mysqli->query($query);
     <table >
         <thead>
             <tr>
-                <th> numero_identificacao </th>
+                <th>numero_identificacao </th>
                 <th>descricao</th>
-                <th>valor </th>
-                <th>solicitacao_servico </th>
+                <th>valor</th>
+                <th>solicitacao_servico</th>
             </tr>
         </thead>
         <tbody>
@@ -36,8 +36,8 @@ $result_query = $mysqli->query($query);
                 print "<td>" . $row['valor'] . "</td>";
                 print "<td>" . $row['solicitacao_servico'] . "</td>";
                 print "<td>";
-                print "<a href='alterar.php?id=".$row['id']."' >alterar</a> - ";
-                print "<a href='excluir.php?id=".$row['id']."' >excluir</a>";
+                print "<a href='alterar.pd=".$row['id']."' >alterar</a> - ";
+                print "<a href='excluir.php?ihp?id=".$row['id']."' >excluir</a>";
                 print "</td>";
                 print "</tr>";
             }

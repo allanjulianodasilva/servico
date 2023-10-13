@@ -8,7 +8,7 @@ $cpf= $_POST['cpf'];
 $endereco= $_POST['endereco'];
 $telefone= $_POST['telefone'];
 
-$query = "UPDATE servico.atendente SET nome='$nome',cpf='$cpf',endereco='$endereco',telefone= '$telefone ' WHERE id=$id" ;
+$query = "UPDATE servico.tecnico SET nome='$nome',cpf='$cpf',endereco='$endereco',telefone= '$telefone ' WHERE id=$id" ;
 echo $query;
 $result_query = $mysqli->query($query);
 

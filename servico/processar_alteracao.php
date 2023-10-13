@@ -4,7 +4,7 @@ include('../database.php');
 
 $id= $_POST['id'];
 $numero_indentificacao= $_POST['numero_indentificacao'];
-$descricao= $_POST['descrica'];
+$descricao= $_POST['descricao'];
 $valor= $_POST['valor'];
 $solicitacao_servico= $_POST['solicitacao_servico'];
 

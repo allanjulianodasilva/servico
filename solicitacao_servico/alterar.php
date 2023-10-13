@@ -4,7 +4,7 @@ include('../database.php');
 
 $id= $_GET['id'];
 
-$query = "SELECT * FROM servico.Sacao_servico WHERE id=$id"; 
+$query = "SELECT * FROM servico.Solicitacao_servico WHERE id=$id"; 
 $result_query = $mysqli->query($query);
 
 
@@ -12,13 +12,13 @@ $row = $result_query->num_rows;
 $solicitacao_servico = $result_query->fetch_assoc();
 
 if ($row > 0){
-    $numero_identificacao  = $solicitacao_servico[' numero_identificacao'];
+    $numero_identificacao  = $solicitacao_servico['numero_identificacao'];
     $data_solicitacao = $solicitacao_servico['data_solicitacao'];
-    $data_inicio = $solicitacao_servico['data_inicio '];
+    $data_inicio = $solicitacao_servico['data_inicio'];
     $data_termino = $solicitacao_servico['data_termino'];
-    $cliente = $solicitacao_servico['cliente '];
+    $cliente = $solicitacao_servico['cliente'];
     $tecnico = $solicitacao_servico['tecnico'];
-    $atentente = $solicitacao_servico['atentente '];
+    $atentente = $solicitacao_servico['atentente'];
    ;
 }
 
