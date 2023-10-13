@@ -37,12 +37,23 @@ if ($row > 0){
      data_solicitacao: <input type="text" name=" data_solicitacao" value="<?php echo  $data_solicitacao ?>" ><br>
      data_inicio: <input type="text" name="data_inicio" value="<?php echo $data_inicio  ?>" required><br><br>
      data_termino: <input type="text" name="data_termino" value="<?php echo $data_termino  ?>" ><br>
-     cliente: <input type="text" name="cliente" value="<?php echo $cliente ?>" ><br>
-     <select cliente="servico">
+     cliente: 
+     <select name="cliente">
+            <?php 
+                $query = "SELECT * FROM servico.cliente"; 
+                $result_query = $mysqli->query($query);
+            
+                while ($row = mysqli_fetch_array( $result_query )) { 
+                    print "<option value='" . $row['id'] . "'";
+                    if ($row['id']==$cliente) print " selected ";
+                    print">" . $row['nome'] . "</option>";
+                }
+            ?>
+        </select><br><br>
      tecnico: <input type="text" name="tecnico" value="<?php echo $tecnico  ?>" ><br>
-     <select tecnico="servico">
+     
      atentente: <input type="text" name="atentente" value="<?php echo $atentente ?>" ><br>
-     <select atentente="servico">
+     
         <input type="hidden" name="id" value="<?php echo $id ?>">
         <input type="submit" value="Alterar">
         <button onclick="window.history.go(-1); return false;">voltar</button>

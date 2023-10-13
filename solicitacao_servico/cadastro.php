@@ -12,7 +12,17 @@
      data_solicitacao: <input type="text" name="data_solicitacao" required ><br>
      data_inicio: <input type="text" name=" data_inicio" value required><br><br>
      data_termino: <input type="text" name="data_termino" required><br>
-     cliente: <input type="text" name="cliente" required><br>
+     cliente:
+     <select name="cliente">
+            <?php 
+                $query = "SELECT * FROM servico.cliente"; 
+                $result_query = $mysqli->query($query);
+            
+                while ($row = mysqli_fetch_array( $result_query )) { 
+                    print "<option value='" . $row['id'] . "'>" . $row['nome'] . "</option>";
+                }
+            ?>
+        </select><br><br>
      tecnico: <input type="text" name="tecnico" value require><br>
      atentente: <input type="text" name="atentente" required><br>
         <input type="submit" value="Cadastrar">
