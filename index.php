@@ -1,6 +1,11 @@
-<a href="atendente">atendente</a><br>
-<a href="cliente">cliente</a><br>
-<a href="material">material</a><br>
-<a href="solicitacao_servico">solicitacao_servico</a><br>
-<a href="servico">servico</a><br>
-<a href="tecnico">tecnico</a><br>
+<link rel="stylesheet" type="text/css" href="/servico/css/style.css">
+<div id="menu">
+    <ul>
+        <li><a href="/servico/cliente">Cliente</a></li>
+        <li><a href="/servico/atendente">Atendente</a></li>
+        <li><a href="/servico/tecnico">Técnico</a></li>
+        <li><a href="/servico/material">Material</a></li>
+        <li><a href="/servico/solicitacao_servico">Solicitação de Serviço</a></li>
+        <li><a href="/servico/servico">Serviço</a></li>
+    </ul>
+</div>

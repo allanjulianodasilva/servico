@@ -1,5 +1,4 @@
 <?php
-
 include('../database.php');
 
 $id= $_GET['id'];
@@ -25,9 +24,10 @@ if ($row > 0){
 <html>
 <head>
     <title>Alterar tecnico</title>
-    <meta http-equiv="content-type" content="text/html;charset=UTF8"
+    <meta http-equiv="content-type" content="text/html;charset=UTF8">
 </head>
 <body>
+    <?php include_once('../index.php');?>
     <h1>alterar tecnico</h1>
     <form action="processar_alteracao.php" method="POST">
      nome: <input type="text" name="nome" value="<?php echo $nome ?>" required><br>

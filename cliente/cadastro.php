@@ -6,6 +6,7 @@
     <meta http-equiv="content-type" content="text/html;charset=UTF8"
 </head>
 <body>
+    <?php include_once('../index.php');?>
     <h1>Cadastro de cliente</h1>
     <form action="processar_cadastro.php" method="POST">
         Nome: <input type="text" name="nome" required><br>

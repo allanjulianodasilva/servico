@@ -24,9 +24,10 @@ if ($row > 0){
 <html>
 <head>
     <title>Alterar material</title>
-    <meta http-equiv="content-type" content="text/html;charset=UTF8"
+    <meta http-equiv="content-type" content="text/html;charset=UTF8">
 </head>
 <body>
+    <?php include_once('../index.php');?>
     <h1>alterar material</h1>
     <form action="processar_alteracao.php" method="POST">
      numero_identificacao: <input type="text" name="numero_identificacao" value="<?php echo $numero_identificacao ?>" required><br>

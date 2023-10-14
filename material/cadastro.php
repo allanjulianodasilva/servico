@@ -3,9 +3,10 @@
 <html>
 <head>
     <title>Cadastro de material</title>
-    <meta http-equiv="content-type" content="text/html;charset=UTF8"
+    <meta http-equiv="content-type" content="text/html;charset=UTF8">
 </head>
 <body>
+    <?php include_once('../index.php');?>
     <h1>Cadastro de material</h1>
     <form action="processar_cadastro.php" method="POST">
         numero_identificacao: <input type="text" name="numero_indentificacao" required><br>

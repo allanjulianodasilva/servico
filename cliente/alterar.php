@@ -27,6 +27,7 @@ if ($row > 0){
     <meta http-equiv="content-type" content="text/html;charset=UTF8"
 </head>
 <body>
+    <?php include_once('../index.php');?>
     <h1>alterar cliente</h1>
     <form action="processar_alteracao.php" method="POST">
      nome: <input type="text" name="nome" value="<?php echo $nome ?>" required><br>

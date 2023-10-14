@@ -5,8 +5,6 @@ include('../database.php');
 $query = "SELECT * FROM servico.servico"; 
 $result_query = $mysqli->query($query);
 
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +13,7 @@ $result_query = $mysqli->query($query);
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
+    <?php include_once('../index.php');?>
     <h1>Listar servico <a href="cadastro.php"><img  src="../img/novo.png"></a> <a href="../"><img  src="../img/voltar.png"></a></h1>
     <!-- Tabela de listagem aqui -->
 
@@ -25,6 +24,7 @@ $result_query = $mysqli->query($query);
                 <th>descricao</th>
                 <th>valor</th>
                 <th>solicitacao_servico</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -36,8 +36,8 @@ $result_query = $mysqli->query($query);
                 print "<td>" . $row['valor'] . "</td>";
                 print "<td>" . $row['solicitacao_servico'] . "</td>";
                 print "<td>";
-                print "<a href='alterar.pd=".$row['id']."' >alterar</a> - ";
-                print "<a href='excluir.php?ihp?id=".$row['id']."' >excluir</a>";
+                print "<a href='alterar.php?id=".$row['id']."' >alterar</a> - ";
+                print "<a href='excluir.php?id=".$row['id']."' >excluir</a>";
                 print "</td>";
                 print "</tr>";
             }

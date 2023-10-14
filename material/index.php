@@ -5,8 +5,6 @@ include('../database.php');
 $query = "SELECT * FROM servico.material"; 
 $result_query = $mysqli->query($query);
 
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +13,7 @@ $result_query = $mysqli->query($query);
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
+    <?php include_once('../index.php');?>
     <h1>Listar material <a href="cadastro.php"><img  src="../img/novo.png"></a> <a href="../"><img  src="../img/voltar.png"></a></h1>
     <!-- Tabela de listagem aqui -->
 
